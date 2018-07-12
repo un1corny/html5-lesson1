@@ -1,0 +1,339 @@
+@dark-font-color: #333333;
+@light-font-color: white;
+
+@base-font-size: 16px;
+
+@background-color: white;
+@second-background-color: darken(@background-color, 3%);
+@dark-background-color: #445161;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Arial, serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: @base-font-size;
+  color: @dark-font-color;
+  background-color: @background-color;
+}
+
+h1 {
+  font-size: 59px;
+}
+
+h2 {
+  font-size: @base-font-size + 14px;
+  line-height: 1.2;
+}
+
+.section {
+  padding: 50px;
+
+  .title {
+    text-align: center;
+    color: #445161;
+  }
+}
+
+header {
+  background-color: @dark-background-color;
+  display: flex;
+  justify-content: space-between;
+  color: @light-font-color;
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  ul {
+    list-style: inside url('images/check-icon.png');
+
+    li {
+      font-size: @base-font-size + 4px;
+      line-height: 1.8;
+      margin-left: 10px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+
+  .about-product {
+    p {
+      line-height: 1.5;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &_title {
+      color: #445161;
+      margin-bottom: 30px;
+    }
+  }
+
+  .product-video {
+    margin-left: 100px;
+  }
+}
+
+.product-pluses {
+  background-color: @second-background-color;
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    column-count: 2;
+
+    li {
+      list-style: none;
+      font-size: @base-font-size;
+      line-height: 1.5;
+
+      &::before {
+        height: 20px;
+        width: 20px;
+        padding: 9px 4px 0 5px;
+        content: url('images/plus.png');
+        background: #445161;
+        margin-right: 10px;
+      }
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.product-screens {
+  ul {
+    column-count: 2;
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin-top: 30px;
+
+      img {
+        width: 200px;
+        height: 150px;
+        float: left;
+        margin-right: 15px;
+      }
+
+      h3 {
+        font-size: @base-font-size + 8px;
+        line-height: 1.25;
+        color: #445161;
+      }
+
+      span {
+        line-height: 1.5;
+        color: @dark-font-color;
+      }
+    }
+  }
+}
+
+.reviews {
+  background-color: @second-background-color;
+
+  .title {
+    margin-bottom: 35px;
+  }
+
+  .user-reviews {
+    display: flex;
+    justify-content: space-between;
+
+    .review-block {
+      display: flex;
+      flex-direction: column;
+
+      .review {
+        display: flex;
+
+        &:not(:first-child) {
+          margin-top: 24px;
+        }
+
+        img {
+          margin: 0 16px;
+          height: 75px;
+        }
+
+        .customer-review {
+          background-color: darken(@background-color, 6%);
+          font-size: @base-font-size - 2px;
+          font-style: italic;
+          line-height: 1.29;
+          text-align: left;
+          padding: 15px;
+          position: relative;
+          border: 1px solid #e8e3e3;
+          border-radius: 4px;
+        }
+
+        .review-square {
+          position: absolute;
+          background-color: darken(@background-color, 6%);
+          width: 20px;
+          height: 20px;
+          transform: rotate(45deg);
+          margin-left: -25px;
+          margin-top: 15px;
+          border-bottom: 1px solid #e8e3e3;
+          border-left: 1px solid #e8e3e3;
+        }
+      }
+    }
+  }
+}
+
+.buy-it-now {
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .tariffs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    .tariff {
+      background-color: @dark-background-color;
+      font-size: @base-font-size - 2px;
+      border: 2px solid @dark-background-color;
+      border-radius: 4px;
+      text-align: center;
+
+      .header {
+        font-size: @base-font-size + 8px;
+        line-height: 1.25;
+        color: @light-font-color;
+        margin: 10px;
+      }
+
+      .price {
+        background-color: @background-color;
+        font-size: @base-font-size + 24px;
+        color: #445162;
+        padding: 10px 0;
+      }
+
+      .tariff-list {
+        color: @light-font-color;
+        margin: 20px;
+
+        ol {
+          text-align: left;
+          list-style-position: inside;
+          font-size: @base-font-size - 2px;
+          line-height: 1.71;
+        }
+      }
+
+      .button {
+        background-color: @background-color;
+        font-size: @base-font-size + 2px;
+        border: 2px solid;
+        border-radius: 4px;
+        color: #445162;
+        text-transform: uppercase;
+        margin: 10px;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.contacts {
+  background-color: @dark-background-color;
+  color: @light-font-color;
+
+  .title {
+    color: @light-font-color;
+    margin-bottom: 30px;
+  }
+
+  .contact-us {
+    display: flex;
+    justify-content: space-around;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+
+      input[type='submit'] {
+        text-transform: uppercase;
+        background-color: @background-color;
+        font-weight: bold;
+        width: 140px;
+        margin: auto;
+
+      }
+      input,
+      textarea {
+        border: 1px solid white;
+        border-radius: 4px;
+        width: 500px;
+        height: 40px;
+
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+      }
+
+      textarea {
+        height: 170px;
+      }
+
+
+    }
+
+    .socials {
+      font-size: @base-font-size;
+      line-height: 1.5;
+
+      & div:not(:first-child) {
+        margin-top: 10px;
+      }
+
+      & div:last-child {
+        margin-top: 30px;
+      }
+
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: @second-background-color;
+  font-size: @base-font-size - 4px;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  color: #445162;
+  text-align: center;
+  padding: 5px;
+}
