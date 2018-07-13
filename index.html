@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="container-fluid">
 
-<header class="section">
-    <div>
+<header class="section row">
+    <div class="col-12">
         <h1 class="header-title">Product name</h1>
         <ul>
             <li>Put on this page information about your product</li>
@@ -17,13 +18,13 @@
             <li>Associate the page with the payment system</li>
         </ul>
     </div>
-    <div class="product-image">
+    <div class="product-image col-12">
         <img src="images/image-jpg.png" alt="header_banner">
     </div>
 </header>
 
-<main class="section">
-    <div class="about-product">
+<main class="section row">
+    <div class="about-product col-12">
         <h2 class="about-product_title">About your product</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aspernatur atque beatae
             doloribus, esse fugit hic inventore ipsum, maiores minima mollitia necessitatibus officia quis quod ratione
@@ -31,15 +32,15 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat
             incidunt inventore, ipsa itaque magnam magni officia porro reiciendis repellendus sint unde ut voluptas.</p>
     </div>
-    <div class="product-video">
+    <div class="product-video col-12">
         <img src="images/video.png" alt="productVideo">
     </div>
 
 </main>
 
-<section class="section product-pluses">
+<section class="section product-pluses row">
     <h2 class="title">Dignity and pluses product</h2>
-    <div class="pluses-list">
+    <div class="pluses-list col-12">
         <ul>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
                 fugiat incidunt inventore
@@ -63,7 +64,7 @@
     </div>
 </section>
 
-<section class="section screenshots">
+<section class="section screenshots row">
     <h2 class="title">Screenshots</h2>
     <div class="product-screens">
         <ul>
@@ -94,58 +95,100 @@
 
 <section class="section reviews">
     <h2 class="title">Reviews</h2>
-    <div class="user-reviews">
-        <div class="review-block">
-            <div class="review">
-                <img src="images/userpic.png" alt="userpic">
-                <div class="customer-review">
-                    <div class="review-square"></div>
-                    Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum
-                    odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
-                    officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
-                </div>
+    <div class="user-reviews row">
+        <div class="review col-12">
+            <img src="images/userpic.png" alt="userpic">
+            <div class="customer-review">
+                <div class="review-square"></div>
+                Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum
+                odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
+                officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
             </div>
-            <div class="review">
-                <img src="images/userpic.png" alt="userpic">
-                <div class="customer-review">
-                    <div class="review-square"></div>
-                    Porro officia cumque sint deleniti nemo facere rem
-                    vitae odit inventore
-                    cum
-                    odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
-                    officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
-                </div>
-            </div>
-
         </div>
-        <div class="review-block">
-            <div class="review">
-                <img src="images/userpic.png" alt="userpic">
-                <div class="customer-review">
-                    <div class="review-square"></div>
-                    Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum
-                    odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
-                    officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
-                </div>
+        <div class="review col-12 col-md-6">
+            <img src="images/userpic.png" alt="userpic">
+            <div class="customer-review">
+                <div class="review-square"></div>
+                Porro officia cumque sint deleniti nemo facere rem
+                vitae odit inventore
+                cum
+                odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
+                officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
             </div>
-            <div class="review">
-                <img src="images/userpic.png" alt="userpic">
-                <div class="customer-review">
-                    <div class="review-square"></div>
-                    Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum
-                    odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
-                    officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
-                </div>
+        </div>
+        <div class="review col-12">
+            <img src="images/userpic.png" alt="userpic">
+            <div class="customer-review">
+                <div class="review-square"></div>
+                Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum
+                odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
+                officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
+            </div>
+        </div>
+        <div class="review col-12 col-sm-6">
+            <img src="images/userpic.png" alt="userpic">
+            <div class="customer-review">
+                <div class="review-square"></div>
+                Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum
+                odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
+                officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
             </div>
         </div>
     </div>
-
 </section>
+
+<!--<section class="section reviews row">-->
+    <!--<h2 class="title">Reviews</h2>-->
+    <!--<div class="user-reviews">-->
+        <!--<div class="review-block col-12">-->
+            <!--<div class="review" col-12>-->
+                <!--<img src="images/userpic.png" alt="userpic">-->
+                <!--<div class="customer-review">-->
+                    <!--<div class="review-square"></div>-->
+                    <!--Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum-->
+                    <!--odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus-->
+                    <!--officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="review col-12">-->
+                <!--<img src="images/userpic.png" alt="userpic">-->
+                <!--<div class="customer-review">-->
+                    <!--<div class="review-square"></div>-->
+                    <!--Porro officia cumque sint deleniti nemo facere rem-->
+                    <!--vitae odit inventore-->
+                    <!--cum-->
+                    <!--odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus-->
+                    <!--officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="review-block col-12">-->
+            <!--<div class="review col-12">-->
+                <!--<img src="images/userpic.png" alt="userpic">-->
+                <!--<div class="customer-review">-->
+                    <!--<div class="review-square"></div>-->
+                    <!--Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum-->
+                    <!--odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus-->
+                    <!--officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="review col-12">-->
+                <!--<img src="images/userpic.png" alt="userpic">-->
+                <!--<div class="customer-review">-->
+                    <!--<div class="review-square"></div>-->
+                    <!--Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum-->
+                    <!--odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus-->
+                    <!--officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 <section class="section buy-it-now">
     <h2 class="title">Buy it now</h2>
-    <div class="tariffs">
-        <div class="tariff">
+    <div class="tariffs row">
+        <div class="tariff col-8">
             <div class="header">
                 Standart
             </div>
@@ -164,7 +207,7 @@
                 buy
             </div>
         </div>
-        <div class="tariff">
+        <div class="tariff col-8">
             <div class="header">
                 Premium
             </div>
@@ -187,7 +230,7 @@
                 buy
             </div>
         </div>
-        <div class="tariff">
+        <div class="tariff col-8">
             <div class="header">
                 Lux
             </div>

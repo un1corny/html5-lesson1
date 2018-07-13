@@ -26,6 +26,7 @@ body {
   font-size: @base-font-size;
   color: @dark-font-color;
   background-color: @background-color;
+  min-width: 320px; //width for iphone 5
 }
 
 h1 {
@@ -39,6 +40,7 @@ h2 {
 
 .section {
   padding: 50px;
+  width: 100%;
 
   .title {
     text-align: center;
@@ -156,52 +158,41 @@ main {
   background-color: @second-background-color;
 
   .title {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   .user-reviews {
-    display: flex;
-    justify-content: space-between;
-
-    .review-block {
+    .review {
       display: flex;
-      flex-direction: column;
+      margin-top: 24px;
 
-      .review {
-        display: flex;
+      img {
+        margin: 0 16px;
+        height: 75px;
+      }
 
-        &:not(:first-child) {
-          margin-top: 24px;
-        }
+      .customer-review {
+        background-color: darken(@background-color, 6%);
+        font-size: @base-font-size - 2px;
+        font-style: italic;
+        line-height: 1.29;
+        text-align: left;
+        padding: 15px;
+        position: relative;
+        border: 1px solid #e8e3e3;
+        border-radius: 4px;
+      }
 
-        img {
-          margin: 0 16px;
-          height: 75px;
-        }
-
-        .customer-review {
-          background-color: darken(@background-color, 6%);
-          font-size: @base-font-size - 2px;
-          font-style: italic;
-          line-height: 1.29;
-          text-align: left;
-          padding: 15px;
-          position: relative;
-          border: 1px solid #e8e3e3;
-          border-radius: 4px;
-        }
-
-        .review-square {
-          position: absolute;
-          background-color: darken(@background-color, 6%);
-          width: 20px;
-          height: 20px;
-          transform: rotate(45deg);
-          margin-left: -25px;
-          margin-top: 15px;
-          border-bottom: 1px solid #e8e3e3;
-          border-left: 1px solid #e8e3e3;
-        }
+      .review-square {
+        position: absolute;
+        background-color: darken(@background-color, 6%);
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+        margin-left: -25px;
+        margin-top: 15px;
+        border-bottom: 1px solid #e8e3e3;
+        border-left: 1px solid #e8e3e3;
       }
     }
   }
@@ -209,7 +200,7 @@ main {
 
 .buy-it-now {
   .title {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .tariffs {
@@ -223,6 +214,7 @@ main {
       border: 2px solid @dark-background-color;
       border-radius: 4px;
       text-align: center;
+      margin-top: 20px;
 
       .header {
         font-size: @base-font-size + 8px;

@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   color: #333333;
   background-color: #ffffff;
+  min-width: 320px;
 }
 h1 {
   font-size: 59px;
@@ -25,6 +26,7 @@ h2 {
 }
 .section {
   padding: 50px;
+  width: 100%;
 }
 .section .title {
   text-align: center;
@@ -116,27 +118,17 @@ main .product-video {
   background-color: #f7f7f7;
 }
 .reviews .title {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
-.reviews .user-reviews {
+.reviews .user-reviews .review {
   display: flex;
-  justify-content: space-between;
-}
-.reviews .user-reviews .review-block {
-  display: flex;
-  flex-direction: column;
-}
-.reviews .user-reviews .review-block .review {
-  display: flex;
-}
-.reviews .user-reviews .review-block .review:not(:first-child) {
   margin-top: 24px;
 }
-.reviews .user-reviews .review-block .review img {
+.reviews .user-reviews .review img {
   margin: 0 16px;
   height: 75px;
 }
-.reviews .user-reviews .review-block .review .customer-review {
+.reviews .user-reviews .review .customer-review {
   background-color: #f0f0f0;
   font-size: 14px;
   font-style: italic;
@@ -147,7 +139,7 @@ main .product-video {
   border: 1px solid #e8e3e3;
   border-radius: 4px;
 }
-.reviews .user-reviews .review-block .review .review-square {
+.reviews .user-reviews .review .review-square {
   position: absolute;
   background-color: #f0f0f0;
   width: 20px;
@@ -159,7 +151,7 @@ main .product-video {
   border-left: 1px solid #e8e3e3;
 }
 .buy-it-now .title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .buy-it-now .tariffs {
   display: flex;
@@ -172,6 +164,7 @@ main .product-video {
   border: 2px solid #445161;
   border-radius: 4px;
   text-align: center;
+  margin-top: 20px;
 }
 .buy-it-now .tariffs .tariff .header {
   font-size: 24px;
