@@ -26,7 +26,7 @@ body {
   font-size: @base-font-size;
   color: @dark-font-color;
   background-color: @background-color;
-  min-width: 320px; //width for iphone 5
+  min-width: 320px; // iphone 5 width
 }
 
 h1 {
@@ -50,8 +50,6 @@ h2 {
 
 header {
   background-color: @dark-background-color;
-  display: flex;
-  justify-content: space-between;
   color: @light-font-color;
 
   h1 {
@@ -70,9 +68,6 @@ header {
 }
 
 main {
-  display: flex;
-  justify-content: space-between;
-
   .about-product {
     p {
       line-height: 1.5;
@@ -87,69 +82,49 @@ main {
       margin-bottom: 30px;
     }
   }
-
-  .product-video {
-    margin-left: 100px;
-  }
 }
 
 .product-pluses {
   background-color: @second-background-color;
 
   .title {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
-  ul {
-    column-count: 2;
+  .pluses {
+    margin-top: 20px;
 
-    li {
-      list-style: none;
-      font-size: @base-font-size;
-      line-height: 1.5;
-
-      &::before {
-        height: 20px;
-        width: 20px;
-        padding: 9px 4px 0 5px;
-        content: url('../images/plus.png');
-        background: #445161;
-        margin-right: 10px;
-      }
-
-      &:not(:first-child) {
-        margin-top: 20px;
-      }
+    img {
+      height: 30px;
+      width: 30px;
+      padding: 5px;
+      background-color: #445161;
+      margin-right: 10px;
+      float: left;
     }
   }
 }
 
 .product-screens {
-  ul {
-    column-count: 2;
+  .item {
+    margin-top: 30px;
 
-    li {
-      list-style-type: none;
-      display: inline-block;
-      margin-top: 30px;
+    img {
+      width: 200px;
+      height: 150px;
+      float: left;
+      margin-right: 15px;
+    }
 
-      img {
-        width: 200px;
-        height: 150px;
-        float: left;
-        margin-right: 15px;
-      }
+    h3 {
+      font-size: @base-font-size + 8px;
+      line-height: 1.25;
+      color: #445161;
+    }
 
-      h3 {
-        font-size: @base-font-size + 8px;
-        line-height: 1.25;
-        color: #445161;
-      }
-
-      span {
-        line-height: 1.5;
-        color: @dark-font-color;
-      }
+    span {
+      line-height: 1.5;
+      color: @dark-font-color;
     }
   }
 }
@@ -235,7 +210,7 @@ main {
         margin: 20px;
 
         ol {
-          text-align: left;
+          text-align: center;
           list-style-position: inside;
           font-size: @base-font-size - 2px;
           line-height: 1.71;
@@ -262,59 +237,47 @@ main {
 
   .title {
     color: @light-font-color;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
-  .contact-us {
+  form {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 
-    form {
-      display: flex;
-      flex-direction: column;
-
-      input[type='submit'] {
-        text-transform: uppercase;
-        background-color: @background-color;
-        font-weight: bold;
-        width: 140px;
-        margin: auto;
-
-      }
-
-      input,
-      textarea {
-        border: 1px solid white;
-        border-radius: 4px;
-        width: 500px;
-        height: 40px;
-
-        &:not(:first-child) {
-          margin-top: 20px;
-        }
-      }
-
-      textarea {
-        height: 170px;
-      }
-
+    input[type='submit'] {
+      text-transform: uppercase;
+      background-color: @background-color;
+      font-weight: bold;
+      width: 140px;
+      position: center;
     }
 
-    .socials {
-      font-size: @base-font-size;
-      line-height: 1.5;
+    input,
+    textarea {
+      border: 1px solid white;
+      border-radius: 4px;
+      max-width: 500px;
+      height: 40px;
+      min-width: 140px;
+      margin-top: 20px;
+    }
 
-      & div:not(:first-child) {
-        margin-top: 10px;
-      }
+    textarea {
+      height: 170px;
+    }
+  }
 
-      & div:last-child {
-        margin-top: 30px;
-      }
+  .socials {
+    font-size: @base-font-size;
+    line-height: 1.5;
+    margin-top: 20px;
 
-      & img {
-        margin-right: 5px;
-      }
+    & div:last-child {
+      margin-top: 30px;
+    }
+
+    & img {
+      margin-right: 5px;
     }
   }
 }
