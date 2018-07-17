@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="scripts/flowplayer.min.js"></script>
+    <link rel="stylesheet" href="styles/skin/skin.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="container">
 
 <header class="section">
     <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-lg-6">
             <h1 class="header-title">Product name</h1>
             <ul>
                 <li>Put on this page information about your product</li>
@@ -20,7 +24,7 @@
                 <li>Associate the page with the payment system</li>
             </ul>
         </div>
-        <div class="product-image col-12 col-lg-6">
+        <div class="product-image col-lg-6">
             <img src="images/image-jpg.png" class="img-fluid" alt="header_banner">
         </div>
     </div>
@@ -28,18 +32,23 @@
 
 <main class="section">
     <div class="row">
-        <div class="about-product col-12 col-lg-6">
+        <div class="about-product col-lg-6">
             <h2 class="about-product_title">About your product</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aspernatur atque beatae
-                doloribus, esse fugit hic inventore ipsum, maiores minima mollitia necessitatibus officia quis quod
-                ratione
-                sapiente, tempore voluptates.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat
-                incidunt inventore, ipsa itaque magnam magni officia porro reiciendis repellendus sint unde ut
-                voluptas.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
+                fugiat incidunt inventore, ipsa itaque magnam magni officia porro reiciendis repellendus sint unde ut
+                voluptas.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
+                fugiat incidunt inventore, ipsa itaque magnam magni officia porro reiciendis repellendus sint unde ut
+                voluptas.
+            </p>
         </div>
-        <div class="col-12 col-lg-6">
-            <img src="images/video.png" class="img-fluid" alt="productVideo">
+        <div class="flowplayer fp-playful col-lg-6" data-aspect-ratio="5:4">
+            <video>
+                <source type="video/mp4" src="video/funny-cat.mp4">
+            </video>
         </div>
     </div>
 </main>
@@ -47,41 +56,41 @@
 <section class="section product-pluses">
     <h2 class="title">Dignity and pluses product</h2>
     <div class="pluses-list row">
-        <div class="pluses col-12 col-sm-6">
+        <div class="pluses col-sm-6">
             <img src="images/plus.png" alt="plus">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet,
-            architecto aut, cum eaque facere
-            fugiat incidunt inventore</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore
+            </span>
         </div>
-        <div class="pluses col-12 col-sm-6">
+        <div class="pluses col-sm-6">
             <img src="images/plus.png" alt="plus">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet,
-            architecto aut, cum eaque facere
-            fugiat incidunt inventore</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore
+            </span>
         </div>
-        <div class="pluses col-12 col-sm-6">
+        <div class="pluses col-sm-6">
             <img src="images/plus.png" alt="plus">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet,
-            architecto aut, cum eaque facere
-            fugiat incidunt inventore</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore
+            </span>
         </div>
-        <div class="pluses col-12 col-sm-6">
+        <div class="pluses col-sm-6">
             <img src="images/plus.png" alt="plus">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet,
-            architecto aut, cum eaque facere
-            fugiat incidunt inventore</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore
+            </span>
         </div>
-        <div class="pluses col-12 col-sm-6">
+        <div class="pluses col-sm-6">
             <img src="images/plus.png" alt="plus">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet,
-            architecto aut, cum eaque facere
-            fugiat incidunt inventore</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore
+            </span>
         </div>
-        <div class="pluses col-12 col-sm-6">
+        <div class="pluses col-sm-6">
             <img src="images/plus.png" alt="plus">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet,
-            architecto aut, cum eaque facere
-            fugiat incidunt inventore</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore
+            </span>
         </div>
 
     </div>
@@ -90,29 +99,37 @@
 <section class="section screenshots">
     <h2 class="title">Screenshots</h2>
     <div class="product-screens row">
-        <div class="item col-12 col-lg-6 col-xl-6">
+        <div class="item col-lg-6 col-xl-6">
             <img class="d-none d-md-block" src="images/screenshot.png" alt="screenshot">
             <h3>The description for the image</h3>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
-                fugiat incidunt inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore.</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
+                fugiat incidunt inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore.
+            </span>
         </div>
-        <div class="item col-12 col-lg-6 col-xl-6">
+        <div class="item col-lg-6 col-xl-6">
             <img class="d-none d-md-block" src="images/screenshot.png" alt="screenshot">
             <h3>The description for the image</h3>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
-                fugiat incidunt inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore.</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
+                fugiat incidunt inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore.
+            </span>
         </div>
-        <div class="item col-12 col-lg-6 col-xl-6">
+        <div class="item col-lg-6 col-xl-6">
             <img class="d-none d-md-block" src="images/screenshot.png" alt="screenshot">
             <h3>The description for the image</h3>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
-                fugiat incidunt inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore.</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
+                fugiat incidunt inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore.
+            </span>
         </div>
-        <div class="item col-12 col-lg-6 col-xl-6">
+        <div class="item col-lg-6 col-xl-6">
             <img class="d-none d-md-block" src="images/screenshot.png" alt="screenshot">
             <h3>The description for the image</h3>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
-                fugiat incidunt inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore.</span>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere
+                fugiat incidunt inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, architecto aut, cum eaque facere fugiat incidunt inventore.
+            </span>
         </div>
     </div>
 </section>
@@ -120,7 +137,7 @@
 <section class="section reviews">
     <h2 class="title">Reviews</h2>
     <div class="user-reviews row">
-        <div class="review col-12 col-md-6 col-lg-3">
+        <div class="review col-md-6 col-lg-3">
             <img src="images/userpic.png" alt="userpic">
             <div class="customer-review">
                 <div class="review-square"></div>
@@ -129,18 +146,16 @@
                 officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
             </div>
         </div>
-        <div class="review col-12 col-md-6 col-lg-3">
+        <div class="review col-md-6 col-lg-3">
             <img src="images/userpic.png" alt="userpic">
             <div class="customer-review">
                 <div class="review-square"></div>
                 Porro officia cumque sint deleniti nemo facere rem
-                vitae odit inventore
-                cum
-                odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus
-                officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
+                vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero
+                doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
             </div>
         </div>
-        <div class="review col-12 col-md-6 col-lg-3">
+        <div class="review col-md-6 col-lg-3">
             <img src="images/userpic.png" alt="userpic">
             <div class="customer-review">
                 <div class="review-square"></div>
@@ -149,7 +164,7 @@
                 officiis sapiente necessitatibus commodi consectetur? <br>Lourens S.
             </div>
         </div>
-        <div class="review col-12 col-md-6 col-lg-3">
+        <div class="review col-md-6 col-lg-3">
             <img src="images/userpic.png" alt="userpic">
             <div class="customer-review">
                 <div class="review-square"></div>
@@ -239,16 +254,22 @@
 <section class="section contacts">
     <h2 class="title">Contacts</h2>
     <div class="contact-us row justify-content-around">
-        <div class="contact-form col-12 col-md-6">
-            <form action="">
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Your number">
+        <div class="contact-form col-md-6">
+            <form action="" method="post">
+                <input type="text" placeholder="Ivan Ivanov" autofocus pattern="^[a-zA-ZА-Яа-яЁё]+$">
+                <input type="tel" placeholder="+7(000)000-0000" pattern="(\+7\([0-9]{3}\)[0-9]{3}-[0-9]{4})">
+                <input type="email" pattern="(/^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i)" list="default-emails">
+                <datalist id="default-emails">
+                    <option value="mymail@mail.ru">
+                    <option value="my.mail@mail.ru">
+                    <option value="my-mail@mail.ru">
+                </datalist>
                 <textarea name="comment" placeholder="Your message:"></textarea>
                 <input type="submit" value="send">
             </form>
 
         </div>
-        <div class="socials col-12 col-md-4">
+        <div class="socials col-md-4">
             <div>
                 <img src="images/skype-icon.png" alt="skype-icon">Skype
             </div>
